@@ -1,0 +1,26 @@
+name: snapscrap-infra
+runtime: python
+description: Infrastructure for SnapScrap.py GCP deployment
+
+# Default configuration that applies to all environments
+config:
+  # Cloud Function settings
+  function:runtime: java17
+  function:entry_point: org.levaldo.snapscrap.PubsubFunction
+  function:memory: 128Mi
+  function:timeout: "60"
+  function:max_instances: "100"
+  function:min_instances: "0"
+  function:ingress: ALLOW_ALL
+
+  # Storage settings
+  storage:class: NEARLINE
+
+  # Cloud Scheduler settings
+  scheduler:schedule: '*/30 * * * *'
+  scheduler:retry_count: "5"
+  scheduler:max_retry_duration: "0s"
+  scheduler:min_backoff: "5s"
+  scheduler:max_backoff: "3600s"
+  scheduler:max_doublings: "5"
+  scheduler:timezone: GMT

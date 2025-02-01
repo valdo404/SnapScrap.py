@@ -32,3 +32,18 @@ ENV/
 
 # Media files
 *.mp4
+
+# Infrastructure
+infra/pulumi/.env
+function/function.zip
+
+# Build artifacts
+target/
+project/target/
+project/project/
+
+# IDE
+.metals/
+.vscode/
+*.iml
+.bsp/
