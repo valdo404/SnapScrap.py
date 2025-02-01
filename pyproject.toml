@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "snapscrap"
+version = "0.1.0"
+description = "Downloads public Snapchat stories in your System"
+authors = ["Laurent Valdes"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/valdo404/SnapScrap.py"
+packages = [{include = "SnapScrap.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.12.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+snapscrap = "SnapScrap:main"
