@@ -35,6 +35,8 @@ ENV/
 
 # Infrastructure
 infra/pulumi/.env
+infra/pulumi/Pulumi.*.yaml
+!infra/pulumi/Pulumi.yaml
 function/function.zip
 
 # Build artifacts
