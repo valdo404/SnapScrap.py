@@ -1,0 +1,6 @@
+encryptionsalt: v1:e2sCUaZNJ3k=:v1:rhm6XFR6ERCNcIqF:Rkvsa4PCCkNcUkR7Eb0Kft178iTi0Q==
+config:
+  gcp:project: lv-project-313715
+  gcp:region: europe-west1
+  scheduler:message: saranc5
+  snapscrap-infra:service_account: 342376591000-compute@developer.gserviceaccount.com
