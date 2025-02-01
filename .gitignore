@@ -32,6 +32,14 @@ ENV/
 
 # Media files
 *.mp4
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.webp
+*.webm
+data/*
+!data/.empty
 
 # Infrastructure
 infra/pulumi/.env
